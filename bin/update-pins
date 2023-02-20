@@ -1,0 +1,8 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+
+use MetaCPIN;
+
+my $mpin = MetaCPIN->new_with_config;
+exit !$mpin->update_pins;
